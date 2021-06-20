@@ -22,7 +22,10 @@ class ArticleBuilder extends StatelessWidget {
               return Divider();
             },
           )
-        : isSearch
+        :
+
+        /// to make search not showing CircularProgressIndicator
+        isSearch
             ? Container()
             : Center(
                 child: CircularProgressIndicator(),
